@@ -4,7 +4,7 @@ public class Food {
     private int calories;
     private String bunType;
 
-    // Constructor
+    // Constructorr
     public Food(String name, double price, int calories, String bunType) {
         this.name = name;
         this.price = price;
@@ -12,7 +12,7 @@ public class Food {
         this.bunType = bunType;
     }
 
-    // Accessor (getter) methods
+    // Methods to get the information
     public String getName() {
         return name;
     }
@@ -29,9 +29,11 @@ public class Food {
         return bunType;
     }
 
-    // toString() method to return the state of the object
-    @Override
-    public String toString() {
-        return "Name: " + name + ", Price: $" + price + ", Calories: " + calories + ", Bun: " + bunType;
+    // Method to print food details in to the console
+    public void printFoodInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Price: $" + price);
+        System.out.println("Calories: " + calories);
+        System.out.println("Bun Type: " + bunType);
     }
 }

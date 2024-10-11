@@ -9,23 +9,14 @@ public class Burger extends Food {
         this.hasCheese = hasCheese;
     }
 
-    // Accessor (getter) methods
-    public String getMeatType() {
-        return meatType;
-    }
-
-    public boolean hasCheese() {
-        return hasCheese;
-    }
-
-    // Method to add cheese
-    public void addCheese() {
-        this.hasCheese = true;
-    }
-
-    // toString() method
-    @Override
-    public String toString() {
-        return super.toString() + ", Meat Type: " + meatType + ", Cheese: " + (hasCheese ? "Yes" : "No");
+    // Method to print burgr details
+    public void printBurgerInfo() {
+        printFoodInfo();
+        System.out.println("Meat Type: " + meatType);
+        if (hasCheese) {
+            System.out.println("Has Cheese: Yes");
+        } else {
+            System.out.println("Has Cheese: No");
+        }
     }
 }

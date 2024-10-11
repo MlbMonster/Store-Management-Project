@@ -9,23 +9,14 @@ public class Hotdog extends Food {
         this.hasMustard = hasMustard;
     }
 
-    // Accessor (getter) methods
-    public String getSausageType() {
-        return sausageType;
-    }
-
-    public boolean hasMustard() {
-        return hasMustard;
-    }
-
-    // Method to add mustard
-    public void addMustard() {
-        this.hasMustard = true;
-    }
-
-    // toString() method
-    @Override
-    public String toString() {
-        return super.toString() + ", Sausage Type: " + sausageType + ", Mustard: " + (hasMustard ? "Yes" : "No");
+    // MEthod to print hotdog details
+    public void printHotdogInfo() {
+        printFoodInfo();
+        System.out.println("Sausage Type: " + sausageType);
+        if (hasMustard) {
+            System.out.println("Has Mustard: Yes");
+        } else {
+            System.out.println("Has Mustard: No");
+        }
     }
 }

@@ -4,13 +4,17 @@ public class StoreRunner {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Creating a Burger object
+        // Create the Burger object
         Burger burger = new Burger("Cheeseburger", 5.99, 650, "Sesame", "Beef", true);
-        System.out.println(burger);
+        System.out.println("Burger:");
+        burger.printBurgerInfo();
 
-        // Creating a Hotdog object
+        System.out.println();
+
+        // Create the Hotdog object
         Hotdog hotdog = new Hotdog("Classic Hotdog", 3.99, 300, "Plain", "Beef", false);
-        System.out.println(hotdog);
+        System.out.println("Hotdog:");
+        hotdog.printHotdogInfo();
 
         input.close();
     }
